@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Procrastination Watcher",
+  "version": "1.0.0",
+  "description": "Stay focused with AI-powered productivity monitoring. Privacy-first, on-device analysis.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications",
+    "alarms",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
